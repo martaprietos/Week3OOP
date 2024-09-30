@@ -25,4 +25,9 @@ public class Calc {
         int sum = a + b;
         System.out.println("The sum is: " + sum);
     }
+
+    public static void sub(int a, int b){
+        int sum = a - b;
+        System.out.println("The sum is: " + sum);
+    }
 }
