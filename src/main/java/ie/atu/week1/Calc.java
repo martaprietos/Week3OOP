@@ -17,6 +17,7 @@ public class Calc {
             case "add": add(a, b); break;
             case "sub": sub(a, b); break;
             case "mul": mul(a, b); break;
+            case "div": div(a, b); break;
 
             default:System.out.println(("Invalid operation")); break;
         }
@@ -25,17 +26,27 @@ public class Calc {
 
     public static void add(int a, int b){
         int sum = a + b;
-        System.out.println("The sum is: " + sum);
+        System.out.println("The result is: " + sum);
     }
 
     public static void sub(int a, int b){
         int sum = a - b;
-        System.out.println("The sum is: " + sum);
+        System.out.println("The result is: " + sum);
     }
 
     public static void mul(int a, int b){
         int sum = a * b;
-        System.out.println("The sum is: " + sum);
+        System.out.println("The result is: " + sum);
+
+    }
+
+    public static void div(int a, int b){
+        if(b == 0){
+            System.out.println("Invalid Operation");
+        } else{
+            int sum = a / b;
+            System.out.println("The result is: " + sum);
+        }
 
     }
 }
