@@ -15,8 +15,10 @@ public class Calc {
         String op = sc1.next();
         switch(op){
             case "add": add(a, b); break;
-            default:
-                System.out.println(("Invalid operation")); break;
+            case "sub": sub(a, b); break;
+            case "mul": mul(a, b); break;
+
+            default:System.out.println(("Invalid operation")); break;
         }
 
     }
@@ -28,6 +30,11 @@ public class Calc {
 
     public static void sub(int a, int b){
         int sum = a - b;
+        System.out.println("The sum is: " + sum);
+    }
+
+    public static void mul(int a, int b){
+        int sum = a * b;
         System.out.println("The sum is: " + sum);
     }
 }
