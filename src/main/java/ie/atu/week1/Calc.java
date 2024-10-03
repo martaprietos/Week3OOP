@@ -7,46 +7,50 @@ public class Calc {
         //methods
         System.out.println("Please enter your first number");
         Scanner sc1 = new Scanner(System.in);
-        int a = sc1.nextInt();
+        double a = sc1.nextInt();
         System.out.println();
         System.out.println("Please enter your second number");
-        int b = sc1.nextInt();
-        System.out.println("Please enter an operation - add, sub, mul, div: ");
+        double b = sc1.nextInt();
+        System.out.println("Please enter an operation - add, sub, mul, div, exp: ");
         String op = sc1.next();
         switch(op){
             case "add": add(a, b); break;
             case "sub": sub(a, b); break;
             case "mul": mul(a, b); break;
             case "div": div(a, b); break;
+            case "exp": exp(a, b); break;
 
             default:System.out.println(("Invalid operation")); break;
         }
 
     }
 
-    public static void add(int a, int b){
-        int sum = a + b;
+    public static void add(double a, double b){
+        double sum = a + b;
         System.out.println("The result is: " + sum);
     }
 
-    public static void sub(int a, int b){
-        int sum = a - b;
+    public static void sub(double a, double b){
+        double sum = a - b;
         System.out.println("The result is: " + sum);
     }
 
-    public static void mul(int a, int b){
-        int sum = a * b;
+    public static void mul(double a, double b){
+        double sum = a * b;
         System.out.println("The result is: " + sum);
 
     }
 
-    public static void div(int a, int b){
+    public static void div(double a, double b){
         if(b == 0){
             System.out.println("Invalid Operation");
         } else{
-            int sum = a / b;
+            double sum = a / b;
             System.out.println("The result is: " + sum);
         }
 
+    }
+
+    public static void exp(double a, double b){System.out.println("Your result is: " + Math.pow(a, b));
     }
 }
