@@ -51,7 +51,6 @@ public class Calc {
 
     }
 
-    public static void exp(double a, double b){
-        System.out.println("The result is: " + Math.pow(a, b));
+    public static void exp(double a, double b){System.out.println("Your result is: " + Math.pow(a, b));
     }
 }
